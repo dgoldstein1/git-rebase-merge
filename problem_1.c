@@ -17,6 +17,12 @@ double consecutiveSum(int step, double max) {
  *	integers 0 -> 999 with a step of 3
  **/
 int main() {
-	printf("%f \n",consecutiveSum(3, 999) + consecutiveSum(5, 999) - consecutiveSum(15, 999));
+	int sum = 0;
+	for (int i = 0; i < 1000; i ++){
+		if (i%3 == 0 || i%5==0) {
+			sum += i;
+		}
+	}
+	printf("%d",sum);
 	return 0;
 }
