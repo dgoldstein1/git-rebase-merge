@@ -2,11 +2,11 @@
 #include <math.h>
 
 /**
- * @param {double} (i.e. compute sum of n + (n + step))
+ * @param {int} (i.e. compute sum of n + (n + step))
  * @param {double} max
  * @return {double} sum of all consecutive integers within range
  */
-double consecutiveSum(double step, double max) {
+double consecutiveSum(int step, double max) {
 	max = floor(max / step);
 	return step * floor((pow(max,2) + max) / 2);
 } 
